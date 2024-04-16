@@ -98,4 +98,16 @@ const somaDobroPares = numeros2
 .map(x => x * 2)
 .reduce((acumulador, valor) => acumulador += valor, 0);
 
-console.log(somaDobroPares);
+
+// forEach
+// Funções também recebem valor, indice, array
+
+const a1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Usando for in para exemplificar
+for(let valor in a1) {
+  console.log(valor);
+}
+
+// Com forEach
+a1.forEach(x => console.log(x));
