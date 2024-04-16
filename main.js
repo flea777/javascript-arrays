@@ -83,3 +83,19 @@ const maisVelha = pessoasReduce.reduce(function(acumulador, valor) {
   if (acumulador.idade > valor.idade) return acumulador;
   return valor;
 });
+
+// Unindo todos - filter, map e reduce
+
+// Retorne a soma do dobro de todos os pares
+// -> Filtrar pares
+// -> Dobrar os valores
+// -> Somar tudo
+
+const numeros2 = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+
+const somaDobroPares = numeros2
+.filter(x => x % 2 === 0)
+.map(x => x * 2)
+.reduce((acumulador, valor) => acumulador += valor, 0);
+
+console.log(somaDobroPares);
